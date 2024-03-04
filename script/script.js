@@ -29,6 +29,7 @@ menuItems.forEach(menuItem => menuItem.addEventListener("click", toggleMenu));
 // Всплывающий popup при клике на "выбрать" в блоке с открытками
 // открыть / закрыть popup
 
+/*
 const openPayPopap = document.querySelectorAll('.cards-item-slider')
 const popupVisible = document.querySelector('.pop-up-paiment')
 const closePopupBTN = document.querySelector('.paiment-block-wrapper-popup>img')
@@ -78,7 +79,7 @@ function showSlidesPopup(slideIndex = 0) {
     }
   }
 }
-
+*/
 //----------------------------------------------------------------------------------
 // слайдер открыток при разрешении экрана 639 - 360px
 
@@ -142,7 +143,7 @@ window.addEventListener('resize', () => toggleDisplay(document.querySelectorAll(
 //-------------------------------------------------------------------------------------------------------
 // Блок с оплатой пожертвований
 // слайдер способов оплаты и стили точек
-
+/*
 let slides = document.querySelectorAll('.slide-item');
 let dots = document.querySelectorAll('.dot-paiment-item');
 
@@ -184,6 +185,7 @@ helpFields.forEach(elem => {
 sums.forEach(elem => {
   elem.addEventListener('click', (event) => handleClick(event, sums));
 })
+*/
 
 // Напишите нам
 
@@ -214,11 +216,11 @@ function copyCurrentUrlToClipboard() {
 }
 
 // Вызов функции при клике на кнопку
-document.getElementById('copyUrlButton').addEventListener('click', copyCurrentUrlToClipboard);
+//document.getElementById('copyUrlButton').addEventListener('click', copyCurrentUrlToClipboard);
 
 
 //mixplat
-
+/*
 const inputBTNMainPayForm = document.querySelector(".pay-form-submit");
 const sumItems = document.querySelectorAll('.sum-item');
 const inputSum = document.querySelector('.sum-item.input');
@@ -249,14 +251,14 @@ regularityFieldWrapper.addEventListener("click", function(e){
 })
 
 
-inputBTNMainPayForm.addEventListener("click", run_mixplat_widget(sumMainPayBlock, regularityChoosing)/*function(e) {
+inputBTNMainPayForm.addEventListener("click", run_mixplat_widget(sumMainPayBlock, regularityChoosing)function(e) {
   e.preventDefault();
   run_mixplat_widget(sumMainPayBlock, regularityChoosing);
-}*/);
-
+});
+*/
 
 // === достаем данные из всплывающего платежного блока (попап) и отправляем их как аргументы run_mixplat_widget()  === //
-
+/*
 let sumPopupBlock = 30000; // сумма платежа
 let postcardName = ""
 
@@ -287,6 +289,6 @@ sumPopupInputField.addEventListener('input', function() {
 inputBTNPopup.addEventListener("click", run_mixplat_widget(sumPopupBlock, postcardName));
 
 
-
+*/
 
 
